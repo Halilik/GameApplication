@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ABABAB"
+    >
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/imageGame"
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/nameT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/releaseDateT"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-8dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Name :"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="265dp"
+        android:layout_toEndOf="@+id/nameT"
+        android:text="Game"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/releaseDateT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="240dp"
+        android:paddingRight="10dp"
+        android:text="Release Date: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/releaseDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-18dp"
+        android:layout_marginBottom="241dp"
+        android:layout_toEndOf="@+id/releaseDateT"
+        android:paddingLeft="10dp"
+        android:text="0/0/0"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/developerT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="216dp"
+        android:text="Developer: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginBottom="216dp"
+        android:layout_toEndOf="@+id/developerT"
+        android:text=".."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/priceT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="191dp"
+        android:text="Price: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="190dp"
+        android:layout_toEndOf="@+id/priceT"
+        android:text="0$"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/discountPriceT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="165dp"
+        android:text="Discount Price :"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/discountPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="165dp"
+        android:layout_toEndOf="@+id/discountPriceT"
+        android:text="0$"
+        android:textSize="18sp" />
+
+</RelativeLayout>
