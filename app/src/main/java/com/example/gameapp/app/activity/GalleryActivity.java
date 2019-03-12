@@ -33,11 +33,22 @@ public class GalleryActivity extends AppCompatActivity {
             String priceUrl = getIntent().getStringExtra("game_price");
             String discountPriceUrl = getIntent().getStringExtra("game_discount_price");
 
-            setImage(imageUrl, imageName,releaseDate,developerUrl,priceUrl,discountPriceUrl);
+            String game_platform_name_0 = getIntent().getStringExtra("game_platform_name_0");
+            String game_platform_name_1 = getIntent().getStringExtra("game_platform_name_1");
+            String game_platform_name_2 = getIntent().getStringExtra("game_platform_name_2");
+            String game_platform_name_3 = getIntent().getStringExtra("game_platform_name_3");
+
+            String game_platform_number_0 = getIntent().getStringExtra("game_platform_number_0");
+            String game_platform_number_1 = getIntent().getStringExtra("game_platform_number_1");
+            String game_platform_number_2 = getIntent().getStringExtra("game_platform_number_2");
+            String game_platform_number_3 = getIntent().getStringExtra("game_platform_number_3");
+
+
+            setImage(imageUrl, imageName,releaseDate,developerUrl,priceUrl,discountPriceUrl,game_platform_name_0,game_platform_name_1,game_platform_name_2,game_platform_name_3,game_platform_number_0,game_platform_number_1,game_platform_number_2,game_platform_number_3);
         }
     }
 
-    private void setImage(String imageUrl, String imageName,String releaseDate,String developerUrl,String priceUrl,String discountPriceUrl){
+    private void setImage(String imageUrl, String imageName,String releaseDate,String developerUrl,String priceUrl,String discountPriceUrl,String gpn0 ,String gpn1 ,String gpn2,String gpn3,String gps0,String gps1,String gps2,String gps3){
 
 
         TextView name = findViewById(R.id.name);
@@ -57,6 +68,30 @@ public class GalleryActivity extends AppCompatActivity {
 
         ImageView image = findViewById(R.id.imageGame);
         Picasso.get().load(imageUrl).into(image);
+
+        TextView platform0name = findViewById(R.id.platform0Name);
+        platform0name.setText(gpn0);
+
+        TextView platform1name = findViewById(R.id.platform1Name);
+        platform1name.setText(gpn1);
+
+        TextView platform2name = findViewById(R.id.platform2Name);
+        platform2name.setText(gpn2);
+
+        TextView platform3name = findViewById(R.id.platform3Name);
+        platform3name.setText(gpn3);
+
+        TextView platform0number = findViewById(R.id.platform0Number);
+        platform0number.setText(gps0);
+
+        TextView platform1number = findViewById(R.id.platform1Number);
+        platform1number.setText(gps1);
+
+        TextView platform2number = findViewById(R.id.platform2Number);
+        platform2number.setText(gps2);
+
+        TextView platform3number = findViewById(R.id.platform3Number);
+        platform3number.setText(gps3);
 
     }
 

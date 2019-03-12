@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         GetDataService service = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
 
         Call<List<RetroPhoto>> call = service.getAllPhotos();
+
         call.enqueue(new Callback<List<RetroPhoto>>() {
 
 
@@ -56,7 +57,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
+
+
 
     /*Method to generate List of data using RecyclerView with custom adapter*/
     private void generateDataList(List<RetroPhoto> photoList) {
@@ -67,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
     }
+
+
 
 
 }

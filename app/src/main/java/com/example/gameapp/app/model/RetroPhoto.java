@@ -5,10 +5,6 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-import okhttp3.internal.platform.Platform;
-
-
-
 public class RetroPhoto {
 
     @SerializedName("name")
