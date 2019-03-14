@@ -26,7 +26,7 @@ public class GalleryActivity extends AppCompatActivity {
         if(getIntent().hasExtra("game_image_url") && getIntent().hasExtra("game_name")){
 
 
-            String imageUrl = getIntent().getStringExtra("game_image_url");
+            String imageUrl = getIntent().getStringExtra("game_image_url");  //get data from intent
             String imageName = getIntent().getStringExtra("game_name");
             String releaseDate = getIntent().getStringExtra("game_release_date");
             String developerUrl = getIntent().getStringExtra("game_developer");
@@ -50,7 +50,7 @@ public class GalleryActivity extends AppCompatActivity {
 
     private void setImage(String imageUrl, String imageName,String releaseDate,String developerUrl,String priceUrl,String discountPriceUrl,String gpn0 ,String gpn1 ,String gpn2,String gpn3,String gps0,String gps1,String gps2,String gps3){
 
-
+        //load data of game_gallery.xml
         TextView name = findViewById(R.id.name);
         name.setText(imageName);
 
