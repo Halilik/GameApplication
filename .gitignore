@@ -8,3 +8,4 @@
 /captures
 .externalNativeBuild
 /app/
+!/app/src/main/res/layout/recycler_activity.xml
